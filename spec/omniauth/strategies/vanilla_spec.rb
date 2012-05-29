@@ -13,7 +13,7 @@ describe OmniAuth::Strategies::Vanilla do
     end
 
     it 'has correct authorize URL' do
-      subject.client.authorize_url.should == 'http://vanilla.o5.no/api/vanilla/v1/oauth/authorize?force=true'
+      subject.client.authorize_url.should == 'http://vanilla.o5.no/api/vanilla/v1/oauth/authorize'
     end
 
     it 'has correct token URL' do
