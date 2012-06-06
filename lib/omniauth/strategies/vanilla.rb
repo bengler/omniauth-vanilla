@@ -5,7 +5,7 @@ module OmniAuth
   module Strategies
     class Vanilla < OmniAuth::Strategies::OAuth2
 
-      DEFAULT_HOST = 'vanilla.o5.no'
+      DEFAULT_HOST = 'apressen.o5.no'
 
       def self.host
         @host ||= case ENV['RACK_ENV']

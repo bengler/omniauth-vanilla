@@ -9,15 +9,15 @@ describe OmniAuth::Strategies::Vanilla do
 
   describe '#client' do
     it 'has correct site URL' do
-      subject.client.site.should == 'http://vanilla.o5.no'
+      subject.client.site.should == 'http://apressen.o5.no'
     end
 
     it 'has correct authorize URL' do
-      subject.client.authorize_url.should == 'http://vanilla.o5.no/api/vanilla/v1/oauth/authorize'
+      subject.client.authorize_url.should == 'http://apressen.o5.no/api/vanilla/v1/oauth/authorize'
     end
 
     it 'has correct token URL' do
-      subject.client.token_url.should == 'http://vanilla.o5.no/api/vanilla/v1/oauth/token'
+      subject.client.token_url.should == 'http://apressen.o5.no/api/vanilla/v1/oauth/token'
     end 
   end
 
