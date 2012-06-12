@@ -45,7 +45,7 @@ module OmniAuth
       end
             
       def raw_info
-        @raw_info ||= access_token.get(USERINFO_ENDPOINT).parsed
+        @raw_info ||= access_token.get(user_info_endpoint).parsed
       end
 
       alias :old_request_phase :request_phase
