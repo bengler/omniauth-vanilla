@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    omniauth-vanilla (0.0.3)
+    omniauth-vanilla (0.0.6)
       multi_json
       oauth
       omniauth (>= 1.0.0)
