@@ -41,7 +41,7 @@ module OmniAuth
       end
 
       def user_info_endpoint
-        "http://{self.class.host}/api/vanilla/v1/users/omniauth_hash"
+        "http://#{self.class.host}/api/vanilla/v1/users/omniauth_hash"
       end
             
       def raw_info
