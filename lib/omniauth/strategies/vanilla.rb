@@ -20,6 +20,7 @@ module OmniAuth
             
       option :name, "vanilla"
       option :force_dialog, nil
+      option :target_url, nil
 
       # TODO: HTTPS support.
       option :client_options, {
@@ -54,6 +55,10 @@ module OmniAuth
         if options[:force_dialog]
           options[:authorize_params] ||= {}
           options[:authorize_params].merge!(:force_dialog => 'true')
+        end
+        if options[:target_url]
+          options[:authorize_params] ||= {}
+          options[:authorize_params].merge!(:target_url => options[:target_url])
         end
         old_request_phase
       end
