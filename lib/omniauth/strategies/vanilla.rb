@@ -12,7 +12,7 @@ module OmniAuth
           when 'development'
             'vanilla.dev'
           when 'staging'
-            'vanilla.origo2.o5.no'
+            'vanilla.staging.o5.no'
           else
             DEFAULT_HOST
         end
