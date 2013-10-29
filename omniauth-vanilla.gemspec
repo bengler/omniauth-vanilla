@@ -11,8 +11,8 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{OmniAuth OAuth 2 strategy for Vanilla (http://github.com/bengler/vanilla).}
   gem.homepage      = "https://github.com/vanilla/omniauth-vanilla"
 
-  gem.add_runtime_dependency     'omniauth', '>= 1.0.0'
-  gem.add_runtime_dependency     'omniauth-oauth2', '>= 1.0.0'
+  gem.add_runtime_dependency     'omniauth', '~> 1.1.4'
+  gem.add_runtime_dependency     'omniauth-oauth2', '~> 1.1.0'
   gem.add_runtime_dependency     'oauth'
   gem.add_dependency             'multi_json'
 
