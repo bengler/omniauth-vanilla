@@ -21,6 +21,7 @@ module OmniAuth
       option :name, "vanilla"
       option :force_dialog, nil
       option :target_url, nil
+      option :provider_ignores_state, true
 
       # TODO: HTTPS support.
       option :client_options, {
