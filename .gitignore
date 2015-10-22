@@ -10,3 +10,4 @@ config/realms/*
 /.brow
 /.rspec
 /pkg
+Gemfile.lock
