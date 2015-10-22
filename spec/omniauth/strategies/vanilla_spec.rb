@@ -1,6 +1,14 @@
 require 'spec_helper'
 
 describe OmniAuth::Strategies::Vanilla do
+
+  before do
+    OmniAuth.config.test_mode = true
+  end
+
+  after do
+    OmniAuth.config.test_mode = false
+  end
   subject do
     OmniAuth::Strategies::Vanilla.new(nil, @options || {})
   end
@@ -18,7 +26,7 @@ describe OmniAuth::Strategies::Vanilla do
 
     it 'has correct token URL' do
       subject.client.token_url.should == 'http://apressen.o5.no/api/vanilla/v1/oauth/token'
-    end 
+    end
   end
 
   describe '#callback_path' do
